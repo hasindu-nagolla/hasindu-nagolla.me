@@ -10,8 +10,20 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 Directory structure:
-└── hasindulakshan-PersonalPortfolio/
+└── hasindulakshan-hasindu-nagolla.me/
+    ├── .astro/
+    │   ├── data-store.json
+    │   ├── content-modules.mjs
+    │   ├── content.d.ts
+    │   ├── types.d.ts
+    │   ├── settings.json
+    │   └── content-assets.mjs
+    ├── CNAME
+    ├── .github/
+    │   └── workflows/
+    │       └── deploy.yml
     ├── public/
+    │   ├── CNAME
     │   └── logos/
     ├── package.json
     ├── tailwind.config.mjs
@@ -60,6 +72,7 @@ Directory structure:
         │   └── index.astro
         └── utils/
             └── cn.ts
+
 
 ```
 
