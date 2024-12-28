@@ -3,45 +3,32 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or the branch you are using
+      - main  # Change this to the branch you want to trigger the deployment on
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js (ensure the correct version)
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Specify your node version
+          node-version: '18'
 
-      # Step 3: Install pnpm
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      # Step 4: Install dependencies
       - name: Install dependencies
-        run: pnpm install  # Use pnpm instead of npm
+        run: |
+          npm install -g pnpm
+          pnpm install
 
-      # Step 5: Build the site
-      - name: Build the site
-        run: pnpm run build  # or the appropriate build script for your project
+      - name: Build Astro project
+        run: pnpm run build
 
-      # Step 6: Set up GitHub Token
-      - name: Set up GitHub Token
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: echo "GH_TOKEN=${GH_TOKEN}" >> $GITHUB_ENV
-
-      # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # or the branch you are deploying to
-          folder: dist  # or the folder where the build outputs
-          token: ${{ secrets.GH_TOKEN }}
+          branch: gh-pages
+          folder: dist  # Make sure this points to your Astro build output folder
+          token: ${{ secrets.GITHUB_TOKEN }}
