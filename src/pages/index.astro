@@ -1,7 +1,10 @@
 ---
-title: "My Portfolio | Hasindu Nagolla"
-description: "Explore the professional portfolio of Hasindu Nagolla, a passionate Software Engineer exploring in AI, ML, and full-stack development."
-layout: "../layouts/Layout.astro"
+export const frontmatter = {
+  title: "My Portfolio | Hasindu Nagolla",
+  description: "Explore the professional portfolio of Hasindu Nagolla, a passionate Software Engineer exploring in AI, ML, and full-stack development.",
+  layout: "../layouts/Layout.astro"
+};
+
 import Component from "../components/Component.astro"
 import Experience from "../components/experience/index.astro"
 import { EXPERIENCE } from "../data/experience"
