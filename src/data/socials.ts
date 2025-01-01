@@ -27,7 +27,7 @@ export const SOCIALS = [
   },
   {
     name: "Medium",
-    url: "https://medium.com/@hasindunagolla",
+    url: "https://medium.com/@hasindu-nagolla",
     icon: IconMedium,
   },
 ];
