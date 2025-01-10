@@ -5,7 +5,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "August 2024 — Present",
     title: "Developer & Founder",
     company: "MindBou",
-    companyUrl: "",
+    companyUrl: "https://mindbou.github.io/About-MindBou/",
     description:
       "An article-sharing platform currently under development that is designed to connect readers and writers through engaging content on various topics.",
     technologies: [
