@@ -11,10 +11,6 @@ import Experience from "../components/experience/index.astro";
 import { EXPERIENCE } from "../data/experience";
 import { SOCIALS } from "../data/socials";
 import Layout from "../layouts/Layout.astro";
-import { FaWhatsapp, FaTelegram  } from "react-icons/fa";
-
-import { ARTICLES } from "../data/articles";
-import ArticleCard from "../components/article/index.astro";
 ---
 
 <!-- Meta Tags -->
@@ -296,14 +292,6 @@ import ArticleCard from "../components/article/index.astro";
       </div>
     </div>
   </div>
-
- <section id="articles" class="mt-16 mb-24 scroll-mt-16" aria-label="Articles and Publications">
-  <h2 class="text-2xl font-bold text-neutral-100 mb-8">Articles & Publications</h2>
-  <ul class="max-w-2xl">
-    {ARTICLES.map(article => <ArticleCard article={article} />)}
-  </ul>
-</section>
-
 
   <footer class="text-center py-4 text-xs opacity-70">
     <p class="mb-2">&copy; {new Date().getFullYear()} All rights reserved.</p>
