@@ -1,0 +1,41 @@
+---
+interface Article {
+  title: string;
+  platform: string;
+  url: string;
+  publishedDate: string;
+  summary: string;
+  tags?: string[];
+}
+
+const article: Article = Astro.props.article;
+---
+
+<li class="mb-12 border-b border-neutral-700 pb-6 last:border-none last:pb-0">
+  <a
+    href={article.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="text-lg font-semibold text-neutral-100 hover:text-indigo-400 transition-colors duration-200"
+    aria-label={`Read article: ${article.title} on ${article.platform}`}
+  >
+    {article.title}
+  </a>
+  <div class="text-xs text-neutral-500 mt-1 font-mono">
+    {article.platform} &middot; {article.publishedDate}
+  </div>
+  <p class="mt-3 text-neutral-300 leading-relaxed">{article.summary}</p>
+
+  {article.tags && article.tags.length > 0 && (
+    <ul class="flex flex-wrap gap-2 mt-3">
+      {article.tags.map((tag) => (
+        <li
+          class="bg-indigo-700 text-indigo-200 text-xs font-semibold rounded px-2 py-0.5 select-none"
+          aria-label={`Tag: ${tag}`}
+        >
+          {tag}
+        </li>
+      ))}
+    </ul>
+  )}
+</li>
