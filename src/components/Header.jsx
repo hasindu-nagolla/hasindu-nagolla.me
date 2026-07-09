@@ -1,9 +1,8 @@
 export default function Header() {
     const socials = [
-        { name: 'linkedin', icon: './assets/linkedin.png', link: '' },
-        { name: 'github', icon: './assets/github.png', link: '' },
-        { name: 'facebook', icon: './assets/facebook.png', link: '' },
-        { name: 'medium', icon: './assets/medium.png', link: '' },
+        { name: 'linkedin', icon: './assets/linkedin.png', link: 'https://www.linkedin.com/in/hasindu-nagolla/' },
+        { name: 'github', icon: './assets/github.png', link: 'https://github.com/hasindu-nagolla' },
+        { name: 'medium', icon: './assets/medium.png', link: 'https://medium.com/@hasindu-nagolla' },
     ];
     return (
         <div className="w-11/12 max-w-3xl text-center mx-auto min-h-screen pt-28 sm:pt-32 flex flex-col items-center justify-center gap-4">
@@ -19,7 +18,14 @@ export default function Header() {
             <div className="flex flex-col items-center gap-4 mt-6">
                 <div className="flex items-center gap-4">
                     {socials.map((s) => (
-                        <a key={s.name} href={s.link || '#'} aria-label={s.name} className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white/5 hover:opacity-80">
+                        <a
+                            key={s.name}
+                            href={s.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={s.name}
+                            className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-white/5 hover:opacity-80"
+                        >
                             <img src={s.icon} alt={s.name} className="w-6 h-6" />
                         </a>
                     ))}
