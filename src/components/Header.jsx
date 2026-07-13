@@ -19,11 +19,8 @@ export default function Header() {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 px-6 overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-primary/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
-
       <div className="max-w-4xl mx-auto text-center w-full z-10 flex flex-col items-center">
-        {/* Profile Picture */}
+        {/* Show profile picture */}
         <div className="mb-6 animate-on-scroll is-visible">
           <img
             src="./assets/profile-img.png"
@@ -32,23 +29,23 @@ export default function Header() {
           />
         </div>
 
-        {/* Greeting */}
+        {/* Show greeting message */}
         <h3
-          className="text-xl sm:text-2xl font-Ovo text-brand-dark dark:text-white mb-6 animate-on-scroll is-visible"
+          className="text-xl sm:text-2xl font-semibold tracking-tight text-brand-dark dark:text-white mb-6 animate-on-scroll is-visible"
           style={{ animationDelay: "0.1s" }}
         >
           Hi! I'm Hasindu Nagolla 👋
         </h3>
 
-        {/* Main Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-Ovo font-normal text-brand-dark dark:text-white leading-[1.15] mb-8">
+        {/* Show main heading */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-brand-dark dark:text-white leading-[1.15] mb-8">
           Software Engineering <br />
           <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl block mt-1">
             Undergraduate
           </span>
         </h1>
 
-        {/* Description */}
+        {/* Show personal description */}
         <p
           className="max-w-3xl mx-auto text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-12 animate-on-scroll is-visible"
           style={{ animationDelay: "0.3s" }}
@@ -59,7 +56,7 @@ export default function Header() {
           strong emphasis on intelligent content handling and AI integration.
         </p>
 
-        {/* Socials */}
+        {/* Show social media links */}
         <div
           className="flex items-center justify-center gap-4 animate-on-scroll is-visible"
           style={{ animationDelay: "0.4s" }}
@@ -78,14 +75,14 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Action Buttons */}
+        {/* Show action buttons */}
         <div 
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 animate-on-scroll is-visible" 
           style={{ animationDelay: "0.5s" }}
         >
           <a
             href="#contact"
-            className="px-8 py-3 rounded-full bg-gradient-to-r from-fuchsia-500 to-orange-400 text-white font-medium flex items-center gap-2 hover:scale-105 transition-transform shadow-md"
+            className="px-8 py-3 rounded-full bg-brand-dark dark:bg-white text-white dark:text-brand-dark font-medium flex items-center gap-2 hover:opacity-90 transition-opacity shadow-md"
           >
             contact me
             <span className="text-xl leading-none">&rarr;</span>

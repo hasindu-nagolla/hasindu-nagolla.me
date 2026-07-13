@@ -50,7 +50,7 @@ export default function Contact() {
             <div className="max-w-3xl mx-auto">
                 
                 <div className="text-center mb-16 animate-on-scroll is-visible">
-                    <h2 className="text-4xl md:text-5xl font-Ovo font-normal text-brand-dark dark:text-white tracking-tight mb-6">Get in touch</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-brand-dark dark:text-white mb-6">Get in touch</h2>
                     <p className="text-lg text-gray-500 dark:text-gray-400">
                         Let's have a quick chat or contact me directly via the form below.
                     </p>
@@ -60,6 +60,7 @@ export default function Contact() {
                     <input type="hidden" name="subject" value="New Portfolio Contact Submission" />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        {/* Name Input Field */}
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
                             <input 
@@ -67,10 +68,11 @@ export default function Contact() {
                                 id="name"
                                 name="name"
                                 required
-                                placeholder="John Doe" 
+                                placeholder="Your Name" 
                                 className="w-full px-5 py-4 bg-brand-surface dark:bg-[#0F172A] border border-transparent focus:border-brand-primary focus:bg-white dark:focus:bg-white/5 rounded-xl outline-none transition-all text-brand-dark dark:text-white placeholder-gray-400"
                             />
                         </div>
+                        {/* Email Input Field */}
                         <div>
                             <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
                             <input 
@@ -78,12 +80,13 @@ export default function Contact() {
                                 id="email"
                                 name="email"
                                 required
-                                placeholder="john@example.com" 
+                                placeholder="your.email@example.com" 
                                 className="w-full px-5 py-4 bg-brand-surface dark:bg-[#0F172A] border border-transparent focus:border-brand-primary focus:bg-white dark:focus:bg-white/5 rounded-xl outline-none transition-all text-brand-dark dark:text-white placeholder-gray-400"
                             />
                         </div>
                     </div>
 
+                    {/* Message Text Area */}
                     <div className="mb-8">
                         <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
                         <textarea 
@@ -100,7 +103,7 @@ export default function Contact() {
                         <button 
                             type="submit" 
                             disabled={isSubmitting}
-                            className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-brand-primary to-brand-secondary text-white font-medium rounded-full shadow-lg shadow-brand-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                            className="w-full sm:w-auto px-10 py-4 bg-brand-dark dark:bg-white text-white dark:text-brand-dark font-medium rounded-full hover:opacity-90 transition-opacity disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                         >
                             {isSubmitting ? 'Sending...' : 'Get in touch'}
                             {!isSubmitting && (

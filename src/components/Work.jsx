@@ -1,4 +1,5 @@
 export default function Work() {
+    // I define the list of projects for the portfolio.
     const work = [
         {
             name: 'MindBou',
@@ -51,17 +52,20 @@ export default function Work() {
     ];
 
     return (
+        // I render the portfolio section.
         <section id="work" className="w-full py-24 md:py-32 px-6 bg-white dark:bg-[#0F172A]">
             <div className="max-w-6xl mx-auto">
                 
+                {/* I display the section header. */}
                 <div className="text-center mb-16 animate-on-scroll is-visible">
-                    <p className="text-sm font-semibold text-brand-primary uppercase tracking-widest mb-3">Portfolio</p>
-                    <h2 className="text-4xl md:text-5xl font-Ovo font-normal text-brand-dark dark:text-white tracking-tight mb-6">Projects</h2>
+                    <p className="text-sm font-semibold text-brand-dark dark:text-white uppercase tracking-widest mb-3">Portfolio</p>
+                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-brand-dark dark:text-white mb-6">Projects</h2>
                     <p className="max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400">
                         Explore a collection of projects showcasing my skills in front-end and back-end development, from web apps to AI solutions.
                     </p>
                 </div>
 
+                {/* I iterate through each project and render a card. */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                     {work.map((project, index) => (
                         <a
@@ -74,7 +78,7 @@ export default function Work() {
                                     event.preventDefault();
                                 }
                             }}
-                            className="group flex flex-col bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10 rounded-2xl overflow-hidden hover:shadow-xl hover:border-gray-200 dark:hover:border-brand-primary/50 hover:-translate-y-1 transition-all duration-300 animate-on-scroll is-visible"
+                            className="group flex flex-col bg-white dark:bg-[#0F172A] border border-gray-100 dark:border-white/10 rounded-2xl overflow-hidden hover:shadow-lg hover:border-gray-200 dark:hover:border-white/30 hover:-translate-y-1 transition-all duration-300 animate-on-scroll is-visible"
                             style={{ animationDelay: `${(index % 4) * 0.1}s` }}
                         >
                             <div className="w-full aspect-[4/3] bg-brand-surface dark:bg-[#0F172A] overflow-hidden relative">
@@ -84,7 +88,7 @@ export default function Work() {
                             
                             <div className="p-6 flex flex-col flex-1 justify-between gap-4">
                                 <div>
-                                    <p className="text-brand-primary font-semibold text-xs uppercase tracking-wider mb-1">{project.description}</p>
+                                    <p className="text-gray-500 dark:text-gray-400 font-semibold text-xs uppercase tracking-wider mb-1">{project.description}</p>
                                     <h3 className="text-brand-dark dark:text-white text-lg font-bold leading-tight">{project.name}</h3>
                                 </div>
                                 
@@ -101,6 +105,7 @@ export default function Work() {
                     ))}
                 </div>
 
+                {/* I provide a link to view more projects on GitHub. */}
                 <div className="flex justify-center animate-on-scroll is-visible" style={{ animationDelay: '0.4s' }}>
                     <a href="https://github.com/hasindu-nagolla" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-brand-surface dark:bg-white/5 border border-gray-200 dark:border-white/10 text-brand-dark dark:text-white font-medium rounded-full hover:bg-gray-50 dark:hover:bg-white/10 transition-colors">
                         View more on GitHub

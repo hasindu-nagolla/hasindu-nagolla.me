@@ -9,6 +9,7 @@ import Navbar from './components/Navbar'
 import LenisScroll from './components/LenisScroll'
 
 export default function App() {
+  // I manage the smooth scroll behavior and observe elements to trigger animations when they scroll into view.
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -27,6 +28,7 @@ export default function App() {
   }, []);
 
   return (
+    // I set up the main layout and structure for the website.
     <div id="top" className="font-inter text-brand-dark dark:text-white bg-white dark:bg-[#0F172A] overflow-x-hidden selection:bg-brand-primary/20 selection:text-brand-primary min-h-screen transition-colors duration-300">
       <LenisScroll />
       <Navbar />
