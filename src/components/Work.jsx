@@ -16,14 +16,14 @@ export default function Work() {
         {
             name: 'HasiiMusic',
             icon: './assets/hasii-music.png',
-            description: 'Telegram Bot',
-            link: 'https://github.com/hasindu-nagolla/HasiiMusicBot',
+            description: 'Telegram Bot & Web Site',
+            link: 'https://hasiimusic.hasindunagolla.live/',
         },
         {
             name: 'Scam Detector',
             icon: './assets/scam-detection.png',
             description: 'AI/ML',
-            link: '',
+            link: 'https://colab.research.google.com/drive/1PLgNbyi27WEp5FnYbZefAOKSA-ncl-zT?usp=sharing',
         },
         {
             name: 'U/I Redesign ',
