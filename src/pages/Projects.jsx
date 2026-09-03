@@ -202,7 +202,7 @@ export default function Projects() {
                                 <div className="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
                                 <div className="w-2.5 h-2.5 rounded-full bg-green-400"></div>
                             </div>
-                            <img src="/assets/mindbou.png?v=2" alt="MediMoto App" className="w-full h-auto rounded-xl border border-gray-200 shadow-sm" />
+                            <img src="/assets/mindbou.webp" alt="MindBou App" className="w-full h-auto rounded-xl border border-gray-200 shadow-sm" />
                         </div>
                     </div>
 
@@ -278,7 +278,7 @@ export default function Projects() {
                                 <div className="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
                                 <div className="w-2.5 h-2.5 rounded-full bg-green-400"></div>
                             </div>
-                            <img src="/assets/hasii-music.png?v=2" alt="HasiiMusic Bot" className="w-full h-auto rounded-xl border border-gray-200 shadow-sm" />
+                            <img src="/assets/hasii-music.webp" alt="HasiiMusic Bot" className="w-full h-auto rounded-xl border border-gray-200 shadow-sm" />
                         </div>
                     </div>
                 </div>

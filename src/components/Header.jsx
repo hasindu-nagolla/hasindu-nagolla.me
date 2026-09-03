@@ -124,7 +124,7 @@ export default function Header() {
 
                         <div className="relative z-10 h-full flex items-end">
                             <img
-                                src="/assets/profile-img.png?v=2"
+                                src="/assets/profile-img.webp"
                                 alt="Hasindu Nagolla"
                                 className="w-auto h-[450px] sm:h-[550px] lg:h-full object-cover object-bottom"
                             />
