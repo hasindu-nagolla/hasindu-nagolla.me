@@ -64,7 +64,7 @@ export default function Navbar() {
 
                     {/* Render the logo */}
                     <a href="/#top" className="flex items-center gap-2 z-50 transition-transform hover:scale-105">
-                        <img src="/assets/logo-dark.png" alt="Hasindu Nagolla" className="h-9 w-auto transform scale-[2] origin-left" />
+                        <img src="/assets/logo-dark.png?v=2" alt="Hasindu Nagolla" className="h-9 w-auto transform scale-[2] origin-left" />
                     </a>
 
                     {/* Render the desktop menu links */}
