@@ -15,7 +15,7 @@ export default function Navbar() {
             if (location.pathname === '/') {
                 const sections = ['about', 'skills', 'work'];
                 let current = 'home';
-                
+
                 for (const section of sections) {
                     const element = document.getElementById(section);
                     if (element) {
@@ -25,18 +25,18 @@ export default function Navbar() {
                         }
                     }
                 }
-                
+
                 // If we're at the very top, force 'home'
                 if (window.scrollY < 100) {
                     current = 'home';
                 }
-                
+
                 setActiveSection(current);
             }
         };
 
         window.addEventListener('scroll', handleScroll);
-        
+
         // Initial setup based on route
         if (location.pathname !== '/') {
             // Strip the leading slash to get 'about', 'projects', etc.
@@ -50,11 +50,10 @@ export default function Navbar() {
 
     const getLinkClass = (section) => {
         const isActive = activeSection === section;
-        return `text-sm font-medium pb-1 transition-all ${
-            isActive 
-            ? 'text-white border-b-2 border-white' 
-            : 'text-gray-300 hover:text-white hover:border-b-2 hover:border-gray-500'
-        }`;
+        return `text-sm font-medium pb-1 transition-all ${isActive
+                ? 'text-white border-b-2 border-white'
+                : 'text-gray-300 hover:text-white hover:border-b-2 hover:border-gray-500'
+            }`;
     };
 
     return (
