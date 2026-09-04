@@ -118,7 +118,7 @@ export default function Projects() {
                 </svg>
             ),
             category: 'UI/UX',
-            description: 'Modern and user-friendly interface redesign concepts.',
+                            description: 'A set of cleaner interface ideas for a mobile banking experience.',
             tech: ['Figma'],
             link: 'https://www.figma.com/design/LyTYW8jfoL38Oxo5XIhLMH/Untitled?node-id=0-1&m=dev&t=YM1W1QGOwIWuKl2O-1',
         }
@@ -128,7 +128,7 @@ export default function Projects() {
         <section className="pt-32 pb-24 px-6 bg-[#FAFBFF] min-h-screen">
             <div className="max-w-7xl mx-auto relative z-10">
 
-                {/* Page Header */}
+                {/* Page introduction */}
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 animate-on-scroll is-visible">
                     <div className="max-w-2xl">
                         <p className="text-brand-primary font-bold text-sm tracking-wider uppercase mb-2">Featured Work</p>
@@ -139,10 +139,10 @@ export default function Projects() {
                     </div>
                 </div>
 
-                {/* Featured Project Card */}
+                {/* Featured project */}
                 <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 mb-8 shadow-xl flex flex-col lg:flex-row gap-12 items-center animate-on-scroll is-visible">
 
-                    {/* Left Details */}
+                    {/* Project details */}
                     <div className="flex-1 w-full">
                         <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-primary/10 text-brand-primary mb-6">
                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
@@ -154,14 +154,14 @@ export default function Projects() {
                         </h2>
                         <p className="text-brand-primary font-bold text-xs uppercase tracking-wider mb-6">Web Application</p>
 
-                        <p className="text-gray-500 text-base leading-relaxed mb-8">
-                            I built MindBou, a full-stack blogging platform, to make creating and sharing content as smooth as possible. It's powered by the MERN stack and hosted seamlessly on Vercel and Render.
+                        <p className="text-gray-500 text-base leading-relaxed mb-8 text-justify">
+                            I built MindBou as a place where people can write, publish, and manage blog posts. It uses the MERN stack and is deployed with Vercel and Render.
                         </p>
 
                         <ul className="space-y-3 mb-8">
                             {[
                                 'Role-based access for Admin and Users',
-                                'Create ,edit and delte blogs',
+                                'Create, edit, and delete blog posts',
                                 'Secure user authentication with JWT and cookies',
                                 'Blog Analytics dashboard for insights'
                             ].map((feature, i) => (
@@ -193,10 +193,10 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    {/* Right Image */}
+                    {/* Project preview */}
                     <div className="flex-1 w-full lg:w-1/2">
                         <div className="rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-xl p-1 sm:p-2 relative">
-                            {/* Window buttons */}
+                            {/* Browser-style preview controls */}
                             <div className="flex items-center gap-1.5 px-3 pt-2 pb-3">
                                 <div className="w-2.5 h-2.5 rounded-full bg-red-400"></div>
                                 <div className="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
@@ -210,7 +210,7 @@ export default function Projects() {
 
                 <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 mb-8 shadow-xl flex flex-col lg:flex-row gap-12 items-center animate-on-scroll is-visible">
 
-                    {/* Left Details */}
+                    {/* Project details */}
                     <div className="flex-1 w-full">
                         <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-primary/10 text-brand-primary mb-6">
                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
@@ -222,16 +222,29 @@ export default function Projects() {
                         </h2>
                         <p className="text-brand-primary font-bold text-xs uppercase tracking-wider mb-6">Web Application</p>
 
-                        <p className="text-gray-500 text-base leading-relaxed mb-8">
-                            HasiiMusic is an <span className="text-color-black font-bold">Open Source</span> Telegram bot I developed in Python. It lets you stream high-quality music right in your voice chats, with support for YouTube, Spotify, and live radio. Under the hood, I used Pyrogram and PyTgCalls to handle smart queue management and smooth playback.
+                        <p className="text-gray-500 text-base leading-relaxed mb-8 text-justify">
+                            ˹ʜᴀꜱɪɪ ꭙ ᴍᴜꜱɪᴄ˼ ♪ is an <span className="text-color-black font-bold">open-source</span> Telegram bot built in Python. It plays music in voice chats from YouTube, Spotify, and live radio, while Pyrogram and PyTgCalls handle the Telegram integration and playback.
                         </p>
+
+                        {/* <div className="grid grid-cols-2 gap-4 mb-8">
+                            <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+                                <p className="text-2xl font-extrabold text-brand-dark">600+</p>
+                                <p className="text-xs font-semibold text-gray-500">Served Groups</p>
+                            </div>
+                            <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+                                <p className="text-2xl font-extrabold text-brand-dark">90%</p>
+                                <p className="text-xs font-semibold text-gray-500">Uptime</p>
+                            </div>
+                        </div> */}
 
                         <ul className="space-y-3 mb-8">
                             {[
-                                'High-Quality Audio Streaming (Opus & FFmpeg)',
+                                'High-Quality Audio & Video Streaming',
                                 'YouTube & Spotify Integration',
                                 'Live Radio Streaming',
-                                'Smart Queue Management'
+                                'Smart Queue Management',
+                                'Multilingual Support',
+                                '600+ Served Chats, International Audience & 90% Uptime'
                             ].map((feature, i) => (
                                 <li key={i} className="flex items-start gap-3 text-gray-600 font-medium text-sm">
                                     <div className="w-5 h-5 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0 mt-0.5 text-brand-primary">
@@ -269,10 +282,10 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    {/* Right Image */}
+                    {/* Project preview */}
                     <div className="flex-1 w-full lg:w-1/2">
                         <div className="rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-xl p-1 sm:p-2 relative">
-                            {/* Window buttons */}
+                            {/* Browser-style preview controls */}
                             <div className="flex items-center gap-1.5 px-3 pt-2 pb-3">
                                 <div className="w-2.5 h-2.5 rounded-full bg-red-400"></div>
                                 <div className="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
@@ -303,7 +316,7 @@ export default function Projects() {
                             <div className="sm:ml-8 flex-1 pr-4">
                                 <h3 className="text-brand-dark text-lg font-extrabold leading-tight mb-1.5">{project.name}</h3>
                                 <p className="text-brand-primary font-bold text-[11px] uppercase tracking-wider mb-2.5">{project.category}</p>
-                                <p className="text-sm text-gray-500 leading-relaxed mb-4">{project.description}</p>
+                                <p className="text-sm text-gray-500 leading-relaxed mb-4 text-justify">{project.description}</p>
 
                                 <div className="flex items-center gap-5 flex-wrap">
                                     {project.tech.map((t) => (

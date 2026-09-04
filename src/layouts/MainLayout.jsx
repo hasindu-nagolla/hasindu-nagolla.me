@@ -7,7 +7,7 @@ import LenisScroll from '../components/LenisScroll';
 export default function MainLayout() {
     const location = useLocation();
 
-    // Re-run the observer whenever the route changes
+    // Watch newly rendered sections after each route change.
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -18,7 +18,7 @@ export default function MainLayout() {
             });
         }, { threshold: 0.1 });
 
-        // Add a slight delay to ensure DOM elements are rendered after route change
+        // Wait briefly for the new page to be in the DOM.
         const timeout = setTimeout(() => {
             document.querySelectorAll('.animate-on-scroll').forEach((el) => {
                 observer.observe(el);
@@ -36,7 +36,7 @@ export default function MainLayout() {
             <LenisScroll />
             <Navbar />
 
-            {/* The current page's content gets rendered here */}
+            {/* The active route is rendered here. */}
             <main className="flex-grow">
                 <Outlet />
             </main>

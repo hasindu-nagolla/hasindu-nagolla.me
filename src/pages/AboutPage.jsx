@@ -66,7 +66,7 @@ export default function AboutPage() {
     return (
         <section className="pt-32 pb-24 px-6 bg-[#FAFBFF] min-h-screen">
             <div className="max-w-4xl mx-auto relative z-10">
-                {/* Header */}
+                {/* Page introduction */}
                 <div className="mb-16 animate-on-scroll is-visible">
                     <p className="text-brand-primary font-bold text-sm tracking-wider uppercase mb-2">More About Me</p>
                     <h1 className="text-4xl md:text-5xl font-extrabold text-brand-dark mb-4">Background & Experience</h1>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                         As a Software Engineering undergraduate, I combine my skills in Full-Stack Development, AI/ML, and Cloud infrastructure to solve complex problems. From designing backend systems and analyzing data to ensuring software quality and deploying applications, I am passionate about creating production-ready, data-driven systems that deliver real value.                    </p>
                 </div>
 
-                {/* Section 1: Personal Details */}
+                {/* Personal details */}
                 <div className="mb-16 animate-on-scroll is-visible">
                     <div className="flex items-center gap-3 mb-6">
                         <div className="w-10 h-10 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary">
@@ -127,7 +127,7 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                {/* Section 2: Education */}
+                {/* Education */}
                 <div className="mb-16 animate-on-scroll is-visible" style={{ animationDelay: '0.1s' }}>
                     <div className="flex items-center gap-3 mb-6">
                         <div className="w-10 h-10 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary">
@@ -158,7 +158,7 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                {/* Section 3: Certificates */}
+                {/* Certificates */}
                 <div className="mb-12 animate-on-scroll is-visible" style={{ animationDelay: '0.2s' }}>
                     <div className="flex items-center gap-3 mb-8">
                         <div className="w-10 h-10 rounded-xl bg-brand-primary/10 flex items-center justify-center text-brand-primary">
