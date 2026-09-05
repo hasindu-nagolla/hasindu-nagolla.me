@@ -1,4 +1,5 @@
 import React from "react";
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 export default function Footer() {
   return (
@@ -17,11 +18,7 @@ export default function Footer() {
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
               aria-label="LinkedIn"
             >
-              <img
-                src="/assets/linkedin-icon.png"
-                alt="LinkedIn"
-                className="w-4 h-4 object-contain"
-              />
+              <RxLinkedinLogo className="w-4 h-4 text-gray-400" aria-hidden="true" />
             </a>
             <a
               href="https://github.com/hasindu-nagolla"
@@ -30,11 +27,7 @@ export default function Footer() {
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
               aria-label="GitHub"
             >
-              <img
-                src="/assets/github-icon.png"
-                alt="GitHub"
-                className="w-4 h-4 object-contain"
-              />
+              <RxGithubLogo className="w-4 h-4 text-gray-400" aria-hidden="true" />
             </a>
             <a
               href="mailto:hasindu.connect@proton.me"

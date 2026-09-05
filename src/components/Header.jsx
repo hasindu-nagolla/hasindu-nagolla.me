@@ -1,60 +1,36 @@
 import React from "react";
+import {
+  FaTelegram,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { SiDevdotto } from "react-icons/si";
 
 export default function Header() {
   const socials = [
     {
       name: "LinkedIn",
-      icon: (
-        <img
-          src="/assets/linkedin-icon.png"
-          alt="LinkedIn"
-          className="w-6 h-6 object-contain"
-        />
-      ),
+      icon: <RxLinkedinLogo className="w-6 h-6" aria-hidden="true" />,
       link: "https://www.linkedin.com/in/hasindu-nagolla/",
     },
     {
       name: "GitHub",
-      icon: (
-        <img
-          src="/assets/github-icon.png"
-          alt="GitHub"
-          className="w-6 h-6 object-contain"
-        />
-      ),
+      icon: <RxGithubLogo className="w-6 h-6" aria-hidden="true" />,
       link: "https://github.com/hasindu-nagolla",
     },
     {
       name: "X",
-      icon: (
-        <img
-          src="/assets/x-icon.png"
-          alt="X"
-          className="w-5 h-5 object-contain rounded-[4px]"
-        />
-      ),
+      icon: <FaSquareXTwitter className="w-6 h-6" aria-hidden="true" />,
       link: "https://x.com/hasindunagolla",
     },
     {
       name: "Dev.to",
-      icon: (
-        <img
-          src="/assets/devto-icon.png"
-          alt="Dev.to"
-          className="w-6 h-6 object-contain rounded-[4px]"
-        />
-      ),
+      icon: <SiDevdotto className="w-6 h-6" aria-hidden="true" />,
       link: "https://dev.to/hasindu-nagolla",
     },
     {
       name: "Telegram",
-      icon: (
-        <img
-          src="/assets/telegram-icon.png"
-          alt="Telegram"
-          className="w-6 h-6 object-contain rounded-full"
-        />
-      ),
+      icon: <FaTelegram className="w-6 h-6" aria-hidden="true" />,
       link: "https://t.me/Hasindu_Lakshan",
     },
   ];
